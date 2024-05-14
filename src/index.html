@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"> 
+  <link href="./output.css" rel="stylesheet">
+  <title>Portafolio - Inicio</title>
+</head>
+<body class="flex flex-col min-h-screen">
+    <header class="bg-blue-500 text-white py-4">
+      <nav class="container mx-auto flex items-center justify-between">
+        <h1 class="text-2xl font-bold">Mi Portafolio</h1>
+        <button class="block lg:hidden px-2 text-xl">
+          <!-- Aquí puedes añadir un icono para el menú en dispositivos móviles -->
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+        <ul class="hidden lg:flex space-x-4">
+          <li><a href="index.html" class="hover:underline">Inicio</a></li>
+          <li><a href="about.html" class="hover:underline">Acerca de mí</a></li>
+          <li><a href="projects.html" class="hover:underline">Proyectos</a></li>
+          <li><a href="contact.html" class="hover:underline">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <section class="container mx-auto mt-8">
+      <h1 class="text-4xl font-bold mb-4">¡Hola, mundo!</h1>
+      <p class="text-lg">Bienvenido a mi portafolio personal. Aquí encontrarás una muestra de mis habilidades, proyectos y más.</p>
+    </section>
+
+    <section class="container mx-auto mt-8">
+      <h1 class="text-4xl font-bold mb-4">Acerca de mí</h1>
+      <div class="flex items-center mb-8">
+        <img src="assets/aldinn.png" alt="Imagen de perfil" class="w-24 h-24 rounded-full mr-4">
+        <p class="text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae tortor vel quam ultrices commodo. Donec vel ante id turpis bibendum vehicula nec vel nibh. Morbi euismod, mauris ut tempus posuere, elit odio tincidunt nunc, ac sollicitudin ligula ligula nec odio. Nulla facilisi. Integer at volutpat felis. Integer eget commodo elit. Aliquam pretium dui eu enim congue laoreet. Nam commodo leo et est tincidunt, eget accumsan eros rutrum.</p>
+      </div>
+      <p class="text-lg">Puedes seguir con más detalles sobre mí aquí...</p>
+    </section>
+    
+    <footer class="bg-gray-200 py-4 mt-auto">
+      <div class="container mx-auto text-center">
+        <p>© 2024 Todos los derechos reservados. Diseñado por Aldo</p>
+      </div>
+    </footer>
+  
+    <!-- Script para el menú responsive en dispositivos móviles -->
+    <script>
+      document.querySelector('button').addEventListener('click', () => {
+        document.querySelector('ul').classList.toggle('hidden');
+      });
+    </script>
+  </body>
+</html>

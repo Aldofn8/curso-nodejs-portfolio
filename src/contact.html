@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" href="./css/styles.css">
+  <link href="./output.css" rel="stylesheet">
+  <title>Portafolio - Contacto</title>
+</head>
+<body class="flex flex-col min-h-screen">
+    <header class="bg-blue-500 text-white py-4">
+      <nav class="container mx-auto flex items-center justify-between">
+        <h1 class="text-2xl font-bold">Mi Portafolio</h1>
+        <button class="block lg:hidden px-2 text-xl">
+          <!-- Aquí puedes añadir un icono para el menú en dispositivos móviles -->
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+        <ul class="hidden lg:flex space-x-4">
+          <li><a href="index.html" class="hover:underline">Inicio</a></li>
+          <li><a href="about.html" class="hover:underline">Acerca de mí</a></li>
+          <li><a href="projects.html" class="hover:underline">Proyectos</a></li>
+          <li><a href="contact.html" class="hover:underline">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <section class="container mx-auto mt-8">
+      <h1 class="text-4xl font-bold mb-4">Contacto</h1>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+        <div>
+          <h2 class="text-xl font-semibold mb-2">Información de contacto</h2>
+          <p class="text-lg">Nombre: Juan Pérez</p>
+          <p class="text-lg">Apellido: Pérez</p>
+          <p class="text-lg">Teléfono: +123456789</p>
+          <p class="text-lg">Email: juanperez@example.com</p>
+          <p class="text-lg">LinkedIn: <a href="https://www.linkedin.com/in/juanperez" class="text-blue-500">Perfil de LinkedIn</a></p>
+        </div>
+        <div>
+          <h2 class="text-xl font-semibold mb-2">Formulario de contacto (deshabilitado)</h2>
+          <input type="text" class="w-full px-4 py-2 mb-4 border border-gray-300 rounded-md" placeholder="Nombre" disabled>
+          <input type="text" class="w-full px-4 py-2 mb-4 border border-gray-300 rounded-md" placeholder="Apellido" disabled>
+          <input type="tel" class="w-full px-4 py-2 mb-4 border border-gray-300 rounded-md" placeholder="Teléfono" disabled>
+          <input type="email" class="w-full px-4 py-2 mb-4 border border-gray-300 rounded-md" placeholder="Email" disabled>
+          <input type="text" class="w-full px-4 py-2 mb-4 border border-gray-300 rounded-md" placeholder="LinkedIn" disabled>
+          <textarea class="w-full px-4 py-2 mb-4 border border-gray-300 rounded-md resize-none" rows="5" placeholder="Mensaje" disabled></textarea>
+          <button class="bg-blue-500 text-white px-4 py-2 rounded-md cursor-not-allowed" disabled>Enviar mensaje</button>
+        </div>
+      </div>
+    </section>
+    
+    <footer class="bg-gray-200 py-4 mt-auto">
+      <div class="container mx-auto text-center">
+        <p>© 2024 Todos los derechos reservados. Diseñado por Aldo</p>
+      </div>
+    </footer>
+  
+    <!-- Script para el menú responsive en dispositivos móviles -->
+    <script>
+      document.querySelector('button').addEventListener('click', () => {
+        document.querySelector('ul').classList.toggle('hidden');
+      });
+    </script>
+  </body>
+</html>

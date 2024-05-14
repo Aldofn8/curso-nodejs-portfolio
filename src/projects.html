@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" href="./css/styles.css">
+  <link href="./output.css" rel="stylesheet">
+  <title>Portafolio - Proyectos</title>
+</head>
+<body class="flex flex-col min-h-screen">
+    <header class="bg-blue-500 text-white py-4">
+      <nav class="container mx-auto flex items-center justify-between">
+        <h1 class="text-2xl font-bold">Mi Portafolio</h1>
+        <button class="block lg:hidden px-2 text-xl">
+          <!-- Aquí puedes añadir un icono para el menú en dispositivos móviles -->
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+        <ul class="hidden lg:flex space-x-4">
+          <li><a href="index.html" class="hover:underline">Inicio</a></li>
+          <li><a href="about.html" class="hover:underline">Acerca de mí</a></li>
+          <li><a href="projects.html" class="hover:underline">Proyectos</a></li>
+          <li><a href="contact.html" class="hover:underline">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <section class="container mx-auto mt-8">
+      <h1 class="text-4xl font-bold mb-4">Proyectos</h1>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Proyecto 1 -->
+        <div class="bg-white p-4 rounded-lg shadow-md">
+          <img src="assets/2209a.png" alt="Proyecto 1" class="w-full h-48 object-cover mb-4">
+          <h2 class="text-xl font-semibold mb-2">Proyecto 1</h2>
+          <p class="text-lg">Descripción corta del proyecto 1.</p>
+        </div>
+        <!-- Proyecto 2 -->
+        <div class="bg-white p-4 rounded-lg shadow-md">
+          <img src="assets/604cdbf80d68a.r_d.654-200.jpeg" alt="Proyecto 2" class="w-full h-48 object-cover mb-4">
+          <h2 class="text-xl font-semibold mb-2">Proyecto 2</h2>
+          <p class="text-lg">Descripción corta del proyecto 2.</p>
+        </div>
+        <!-- Proyecto 3 -->
+        <div class="bg-white p-4 rounded-lg shadow-md">
+          <img src="assets/Captura de pantalla 2023-10-18 231232.png" alt="Proyecto 3" class="w-full h-48 object-cover mb-4">
+          <h2 class="text-xl font-semibold mb-2">Proyecto 3</h2>
+          <p class="text-lg">Descripción corta del proyecto 3.</p>
+        </div>
+        <!-- Proyecto 4 -->
+        <div class="bg-white p-4 rounded-lg shadow-md">
+          <img src="assets/cuchi.jpg" alt="Proyecto 4" class="w-full h-48 object-cover mb-4">
+          <h2 class="text-xl font-semibold mb-2">Proyecto 4</h2>
+          <p class="text-lg">Descripción corta del proyecto 4.</p>
+        </div>
+        <!-- Proyecto 5 -->
+        <div class="bg-white p-4 rounded-lg shadow-md">
+          <img src="assets/wp9001455.jpg" alt="Proyecto 5" class="w-full h-48 object-cover mb-4">
+          <h2 class="text-xl font-semibold mb-2">Proyecto 5</h2>
+          <p class="text-lg">Descripción corta del proyecto 5.</p>
+        </div>
+        <!-- Proyecto 6 -->
+        <div class="bg-white p-4 rounded-lg shadow-md">
+          <img src="assets/gente-conduciendo-coches-motos-diseno-vectorial_18591-62423.jpg" alt="Proyecto 6" class="w-full h-48 object-cover mb-4">
+          <h2 class="text-xl font-semibold mb-2">Proyecto 6</h2>
+          <p class="text-lg">Descripción corta del proyecto 6.</p>
+        </div>
+      </div>
+    </section>
+    
+    <footer class="bg-gray-200 py-4 mt-auto">
+      <div class="container mx-auto text-center">
+        <p>© 2024 Todos los derechos reservados. Diseñado por Aldo</p>
+      </div>
+    </footer>
+  
+    <!-- Script para el menú responsive en dispositivos móviles -->
+    <script>
+      document.querySelector('button').addEventListener('click', () => {
+        document.querySelector('ul').classList.toggle('hidden');
+      });
+    </script>
+  </body>
+</html>
